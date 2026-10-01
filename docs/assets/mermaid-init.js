@@ -9,8 +9,8 @@
   }
 
   var fontStack =
-    '-apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", ' +
-    '"Hiragino Sans GB", "Microsoft YaHei", Roboto, Helvetica, Arial, sans-serif';
+    getComputedStyle(document.documentElement).getPropertyValue("--ds-font-sans").trim() ||
+    "system-ui, sans-serif";
 
   mermaid.initialize({
     startOnLoad: true,

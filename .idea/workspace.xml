@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c02fa3b7-781c-4326-8e87-522b5850108a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/docs/example/example.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/mermaid-init.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/mermaid-init.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/overrides.css" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/overrides.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/static/anthropic-mark.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/static/asf_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/static/dxgate-mark.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/static/logo.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/static/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/static/openai-mark.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/tokens.css" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/tokens.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/concepts/extensibility.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/concepts/extensibility.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/concepts/scalability.en.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/concepts/scalability.en.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/concepts/scalability.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/concepts/scalability.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/concepts/security.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/concepts/security.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/concepts/traffic-management.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/concepts/traffic-management.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/dxgate/a2a.en.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/dxgate/a2a.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/dxgate/architecture.en.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/dxgate/architecture.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/dxgate/cost-control.en.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/dxgate/cost-control.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/dxgate/http-service.en.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/dxgate/http-service.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/dxgate/index.en.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/dxgate/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/dxgate/llm.en.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/dxgate/llm.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/dxgate/mcp.en.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/dxgate/mcp.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/dxgate/observability.en.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/dxgate/observability.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/dxgate/security.en.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/dxgate/security.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/dxgate/service.en.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/dxgate/service.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/example/index.en.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/example/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/example/moviereview.en.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/example/moviereview.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/latest/release/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/models/index.en.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/models/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/operation/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/operation/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/overview/index.en.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/overview/index.en.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/overview/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/overview/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/reference/application-standard-metrics.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/reference/application-standard-metrics.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/setup/install/dubboctl.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/setup/install/dubboctl.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/setup/install/multicluster.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/tasks/observability/logs/logs.en.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/tasks/observability/logs/access-logs.en.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/tasks/observability/logs/logs.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/tasks/observability/logs/access-logs.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/tasks/observability/metrics/metrics.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/tasks/observability/metrics/metrics.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/tasks/scalability/activation.en.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/tasks/scalability/activation.en.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/tasks/scalability/activation.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/tasks/scalability/activation.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/tasks/security/jwt.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/tasks/security/jwt.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/tasks/security/mtls.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/tasks/security/mtls.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/tasks/traffic/canary/canary.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/tasks/traffic/canary/canary.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/tasks/traffic/circuit-breaking/circuit-breaking.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/tasks/traffic/circuit-breaking/circuit-breaking.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/tasks/traffic/egress/egress.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/tasks/traffic/egress/egress.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/tasks/traffic/fault-injection/fault-injection.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/tasks/traffic/fault-injection/fault-injection.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/tasks/traffic/ingress/gateway-api.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/tasks/traffic/ingress/gateway-api.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/tasks/traffic/request-retries/request-retries.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/tasks/traffic/request-retries/request-retries.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/tasks/traffic/request-timeouts/request-timeouts.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/tasks/traffic/request-timeouts/request-timeouts.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/tasks/traffic/routing/routing.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/tasks/traffic/routing/routing.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mkdocs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mkdocs.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/theme/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/assets/kd-theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/theme/assets/kd-theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/theme/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/theme/main.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3JLGn3SOq5l5BkyxB8f15tzwhz4" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/mfordjody/laboratory/opensource/dubml.github.io&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  }
+}</component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-WS-262.10315.144" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c02fa3b7-781c-4326-8e87-522b5850108a" name="Changes" comment="" />
+      <created>1789433098929</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1789433098929</updated>
+      <workItem from="1789433100057" duration="16910000" />
+      <workItem from="1789536084186" duration="18191000" />
+      <workItem from="1789581296529" duration="1002000" />
+      <workItem from="1789624376321" duration="8701000" />
+      <workItem from="1790009821634" duration="866000" />
+      <workItem from="1790091159680" duration="585000" />
+      <workItem from="1790133370470" duration="9000" />
+      <workItem from="1790518327640" duration="7833000" />
+      <workItem from="1790569673040" duration="608000" />
+      <workItem from="1790577358624" duration="3133000" />
+      <workItem from="1790616302028" duration="2890000" />
+      <workItem from="1790647626413" duration="1151000" />
+      <workItem from="1790745410787" duration="589000" />
+      <workItem from="1790746825346" duration="575000" />
+      <workItem from="1790770139283" duration="594000" />
+      <workItem from="1790778518828" duration="1783000" />
+      <workItem from="1790787300489" duration="2000" />
+      <workItem from="1790787525876" duration="1301000" />
+      <workItem from="1790794023404" duration="3979000" />
+      <workItem from="1790835272673" duration="1593000" />
+      <workItem from="1790861078520" duration="626000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

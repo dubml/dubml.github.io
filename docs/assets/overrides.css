@@ -5,9 +5,9 @@
    flat: 1px hairlines, no shadows on structural surfaces. */
 
 :root {
-  /* System-only stack: Monaco handles Latin; the OS supplies Chinese glyphs. */
-  --mesh-font-mono:    Monaco, Menlo, Consolas, "Liberation Mono", "PingFang SC", "Microsoft YaHei UI", "Microsoft YaHei", ui-monospace, SFMono-Regular, "SF Mono", monospace;
-  --mesh-font-system:  Monaco, Menlo, Consolas, "Liberation Mono", "PingFang SC", "Microsoft YaHei UI", "Microsoft YaHei", ui-monospace, "Noto Sans", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  /* Use the operating system UI font; code uses its default monospace font. */
+  --mesh-font-mono:    var(--ds-font-mono);
+  --mesh-font-system:  var(--ds-font-sans);
   --md-text-font:      var(--mesh-font-system);
   --md-ui-font:        var(--mesh-font-system);
   --md-code-font:      var(--mesh-font-mono);
@@ -238,16 +238,67 @@ html:lang(en) .md-header__option .md-select__link[hreflang="en"]::after {
   font-size: 0.55rem;
 }
 
-/* Logo — blue line-art, shown as-is on the light chrome */
-.md-header__button.md-logo img, .md-header__button.md-logo svg {
-  width: 1.9rem; height: 1.9rem; display: block;
+/* Mode select */
+.md-header__option--mode .md-select > .md-header__button {
+  min-width: unset;
+  gap: 0.45rem;
+  padding: 0 0.6rem;
+  font-family: var(--md-ui-font);
+  font-size: 0.66rem;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+.md-header__option--mode .md-select > .md-header__button span {
+  font-family: var(--md-ui-font);
+  font-size: 0.66rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1;
+}
+.md-header__option--mode .md-select > .md-header__button::before {
+  content: none !important;
+  display: none !important;
+}
+.md-header__option--mode .md-select > .md-header__button::after {
+  content: none !important;
+  display: none !important;
+}
+.kd-mode-select__caret {
+  border-bottom: 1.4px solid currentColor;
+  border-right: 1.4px solid currentColor;
+  color: var(--mesh-ink-muted);
+  height: 0.38rem;
+  margin-top: -0.16rem;
+  transform: rotate(45deg);
+  width: 0.38rem;
+  transition: color 160ms ease, transform 160ms ease;
+  display: inline-block;
+}
+.md-header__option--mode .md-select:hover .kd-mode-select__caret,
+.md-header__option--mode .md-select:focus-within .kd-mode-select__caret {
+  transform: translateY(0.08rem) rotate(-135deg);
+}
+.md-header__option--mode .md-select__link {
+  font-family: var(--md-ui-font);
+  font-size: 0.66rem;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+.md-header__option--mode .md-select__link::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Logo — supplied Dubbo badge, preserving its original colors and transparency */
+.md-header__button.md-logo img {
+  width: 2.2rem; height: 2.2rem; display: block;
   filter: none;
 }
-.md-header__button.md-logo { margin: 0 0.75rem 0 0.5rem !important; padding: 0 !important; }
+.md-header__button.md-logo { flex-shrink: 0; margin: 0 0.35rem 0 0.25rem !important; padding: 0 !important; }
 
-/* Search — keep a gap between the search box and the language selector */
+/* Search — sits on right of language selector */
 @media screen and (min-width: 60em) {
-  .md-search { margin-right: 0.9rem; }
+  .md-search { margin-left: 0.35rem; margin-right: 0.35rem; }
 }
 
 /* Search — pill at rest, opens into a rounded panel */

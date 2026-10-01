@@ -14,7 +14,7 @@ curl -L https://dubbo.apache.org/downloadDubbo | sh -
 Go to the Dubbo package directory:
 
 ```bash
-cd dubbo-0.3.6
+cd dubbo-0.4.7
 ```
 
 Install Dubbo with the default profile:

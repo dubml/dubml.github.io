@@ -1,11 +1,11 @@
 > 未完成撰写的文档，因为版本迭代过快，跟新版本会存在一定差异，后续会进行补充完善。
 
-> 本任务使用 `moviereview` 示例。
+## 前提条件
+- 已安装 [moviereview](https://github.com/apache/dubbo-kubernetes/tree/master/samples/moviereview) 服务
 
+## URI
 
-## URI 路由
-
-下面的规则把绑定到 `moviepage` 服务，根据 URI 前缀把请求转发到 `details` 或 `reviews`。 `rules` 按顺序匹配。把精确规则放在前面，把更宽泛的规则放在后面，不写 `matches` 的规则作为默认兜底。
+根据 URI 前缀把请求转发到 `details` 或 `reviews`。`rules` 按顺序匹配。把精确规则放在前面，把更宽泛的规则放在后面，不写 `matches` 的规则作为默认兜底。
 
 ```bash
 kubectl apply -f - <<EOF
@@ -38,9 +38,9 @@ spec:
 EOF
 ```
 
-## Header 路由
+## Headers
 
-下面的规则把绑定到 `reviews` 服务。`jason` 用户的请求进入 `reviews-v1`，其余流量按权重进入 `reviews-v2` 和 `reviews-v3`。
+根据 Headers 把用户绑定到 `reviews` 服务。 jason 用户的请求进入 `reviews-v1`，其余流量按权重进入 `reviews-v2` 和 `reviews-v3`。
 
 ```bash
 kubectl apply -f - <<EOF
@@ -74,12 +74,13 @@ spec:
 EOF
 ```
 
-## 查看资源
+## 查看资源信息
 
 ```bash
 kubectl get httproute -n moviereview
 ```
 
+TODO 过时内容
 ## 验证
 
 默认提供 `proto.XDSTestService/ForwardHTTP` 测试入口。先把 17171 转发到本地，后续 `grpcurl` 都打这个端口。带 `end-user: jason` Header 的请求会触发 Header 路由。
@@ -150,9 +151,9 @@ reviews v2
 reviews v3
 ```
 
-## 清理
+## 清理资源
 
 ```bash
-kubectl delete httproute moviepage-routing -n moviereview
-kubectl delete httproute reviews-routing -n moviereview
+kubectl -n moviereview delete httproute moviepage-routing 
+kubectl -n moviereview delete httproute reviews-routing 
 ```

@@ -1,11 +1,11 @@
-# 指标
+> 未完成撰写的文档，因为版本迭代过快，跟新版本会存在一定差异，后续会进行补充完善。
 
 Telemetry API 控制 Inherent Client 和 Server 的指标生成规则。
 规则由 Inherent 运行时在应用进程内执行，不创建代理工作负载。
 
 配置 `prometheus` provider 后，请求数、请求耗时、请求大小、响应大小四个标准指标默认开启。名称、类型和标准标签见[应用标准指标](../../../reference/application-standard-metrics.md)。
 
-## 前提
+## 先决条件 
 
 已安装 dubbod，应用使用 Inherent gRPC Application SDK，并且工作负载已启用 Inherent 模式。指标端点和抓取声明由系统自动配置。
 
@@ -53,8 +53,8 @@ EOF
 addons 提供独立的采集和展示组件：
 
 ```bash
-kubectl apply -f samples/addons/prometheus.yaml
-kubectl apply -f samples/addons/grafana.yaml
+kubectl apply -f examples/addons/prometheus.yaml
+kubectl apply -f examples/addons/grafana.yaml
 ```
 
 ## 产生流量
@@ -69,6 +69,6 @@ curl http://$GATEWAY_URL/payment
 
 ```bash
 kubectl -n dubbo-system delete telemetry metrics-tags
-kubectl delete -f samples/addons/grafana.yaml
-kubectl delete -f samples/addons/prometheus.yaml
+kubectl delete -f examples/addons/grafana.yaml
+kubectl delete -f examples/addons/prometheus.yaml
 ```

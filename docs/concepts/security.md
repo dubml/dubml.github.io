@@ -1,15 +1,6 @@
+> 未完成撰写的文档，因为版本迭代过快，跟新版本会存在一定差异，后续会进行补充完善。
+
 Dubbo 安全基础架构负责工作负载身份、传输加密、请求认证和访问控制。mTLS（Mutual TLS）表示客户端和服务端使用证书互相校验身份；JWT（JSON Web Token）用于在 HTTP 请求中携带最终用户身份。
-
-## 执行链路
-
-安全能力按数据面实际职责拆分，不要求所有流量经过同一套过滤器：
-
-- `dubbod` 内置 CA 为接入网格的工作负载签发短期证书并持续轮换。Inherent 应用通过挂载 Secret 和 `file_watcher` 加载证书；dxgate 通过 ADS SDS 订阅 `default` 与 `ROOTCA`，校验后 ACK，错误版本 NACK 并继续使用最后有效证书。
-- Inherent gRPC 应用由原生 xDS client/server 执行 `PeerAuthentication` 与 SPIFFE 身份校验，不注入 dxproxy 或 `grpc-inbound` sidecar。
-- `dxgate` 保护 Gateway API HTTP 流量：验证 JWT 签名、`issuer`、`audience` 和有效期，生成 `requestPrincipal`，再执行基于 `requestPrincipals` 与 `request.auth.claims[...]` 的 `AuthorizationPolicy`。
-- `dubbod` 按 namespace 和 workload selector 选择策略。无法由当前数据面可靠验证的字段不会被降级为更宽松的规则。
-
-认证失败或授权不匹配都在数据面直接拒绝。dxgate 把拒绝计入 `policy_denied` 指标并记录请求失败日志。
 
 ## 对等认证
 
@@ -38,7 +29,7 @@ spec:
 
 全局自动 mTLS 使用 root namespace 策略；namespace 级别策略可以只影响某个 namespace，适合分阶段迁移。
 
-dxgate 的出站工作负载证书由控制面 SDS 动态分发。证书轮换成功后只影响新 TLS 连接；坏 PEM、证书与私钥不匹配或无效根证书会被 NACK，不替换正在使用的证书。
+transit 的出站工作负载证书由控制面 SDS 动态分发。证书轮换成功后只影响新 TLS 连接；坏 PEM、证书与私钥不匹配或无效根证书会被 NACK，不替换正在使用的证书。
 
 ## 身份
 

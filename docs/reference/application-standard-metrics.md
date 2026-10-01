@@ -1,3 +1,5 @@
+> 未完成撰写的文档，因为版本迭代过快，跟新版本会存在一定差异，后续会进行补充完善。
+
 # 应用标准指标
 
 应用标准指标由 Inherent gRPC 运行时在应用进程内生成，不依赖代理工作负载。Application SDK 创建 gRPC Client 和 Server 时自动接入采集；控制面自动注入指标端点和 Prometheus 抓取声明，业务代码不需要手动注册 `/metrics`。Telemetry API 负责开启指标并定制作用域和标签，不负责定义指标本身。
@@ -35,4 +37,4 @@
 
 Prometheus 发现阶段附加的 `namespace`、`pod`、`instance` 不属于应用标准标签。Telemetry `tags` 只允许对上述标准标签执行 `REMOVE`；未知标签会被拒绝。
 
-配置方式见[指标任务](../tasks/observability/metrics/metrics.md)。
+配置方式见[指标](../tasks/observability/metrics/metrics.md)。

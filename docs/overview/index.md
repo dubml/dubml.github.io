@@ -1,7 +1,9 @@
-# 概述
-Dubbo Mesh 是 2025 年发起的开源服务网格。Inherent 是以 xDS 为核心的 SDK-native 网格模式：控制面直接向 gRPC 服务下发策略，服务间流量保持直连数据路径。
+> 未完成撰写的文档，因为版本迭代过快，跟新版本会存在一定差异，后续会进行补充完善。
 
-Inherent 模式主要以 xDS 协议为核心，加入到网格里面不会产生额外的代理负载加入到服务里面，而且依旧可以做到业务无侵入。 它依旧提供如下：
+# 概述
+Dubbo Service Mesh 是 2025 年发起的开源服务网格。Inherent 是以 xDS 为核心的 SDK Native 网格模式：Dubbo 控制平面直接向 gRPC 服务下发策略，服务间流量保持直连数据路径。
+
+Inherent 模式主要以 xDS 协议为核心，加入到网格里面不会产生额外的代理负载且依旧可以做到业务无侵入。它依旧提供如下：
 
 - 丰富的路由规则、超时、重试、故障注入对流量行为进行细粒度控制
 - 提供路由流量自动负载均衡
@@ -20,7 +22,7 @@ curl -L https://dubbo.apache.org/downloadDubbo | sh -
 转到 Dubbo 包目录：
 
 ```bash
-cd dubbo-0.4.4
+cd dubbo-0.4.7
 ```
 
 使用 default 配置文件安装 Dubbo：

@@ -1,26 +1,11 @@
 > 未完成撰写的文档，因为版本迭代过快，跟新版本会存在一定差异，后续会进行补充完善。
 
-> 本任务使用 `samples/moviereview` 示例。
+## 前提条件
+- 已安装 [moviereview](https://github.com/apache/dubbo-kubernetes/tree/master/samples/moviereview) 服务
 
-请求超时是客户端等待上游 HTTP 响应的最长时间。超过这个时间后，xDS 客户端会取消本次请求。
+## 超时
 
-## 部署
-
-```bash
-kubectl create ns moviereview
-kubectl label namespace moviereview dubbo-injection=enabled
-kubectl apply -f samples/moviereview/deployment.yaml
-```
-
-## 配置请求超时
-
-同一个父 Service 只保留本任务的 `HTTPRoute`。如果刚执行过流量路由或流量转移任务，旧规则也会绑定 `reviews`，验证时会看到旧路由。
-
-```bash
-kubectl -n moviereview delete httproute moviepage-routing reviews-routing reviews-canary
-```
-
-下面的规则把 `reviews` 请求转发到 `reviews-v2`，并把请求超时设置为 `500ms`：
+把 `reviews` 请求转发到 `reviews-v2`，并把请求超时设置为 `500ms`：
 
 ```bash
 cat <<EOF | kubectl apply -f -
@@ -44,6 +29,13 @@ spec:
 EOF
 ```
 
+## 查看资源信息
+
+```bash
+kubectl get httproute -n moviereview
+```
+
+TODO 过时内容
 ## 验证
 
 先把 `dubbod` 的测试入口转发到本地：
@@ -128,10 +120,8 @@ kubectl -n moviereview patch httproute reviews-timeout --type='merge' -p '
 }'
 ```
 
-## 清理
+## 清理资源
 
 ```bash
 kubectl -n moviereview delete httproute reviews-timeout
-kubectl delete -f samples/moviereview/deployment.yaml
-kubectl delete ns moviereview
 ```

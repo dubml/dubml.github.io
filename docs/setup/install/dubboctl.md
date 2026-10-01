@@ -17,7 +17,7 @@ dubboctl install -y
 
 可以选取任意一个 dubbo 内置的配置档
 ```bash
-dubboctl install --set profile=demo
+dubboctl install --set profile=default
 ```
 可以通过在命令行传递配置档名称的方式，安装到集群。
 
@@ -61,9 +61,8 @@ dubboctl manifest generate > $HOME/generated-manifest.yaml
 ```bash
 dubboctl uninstall --remove -y
 ```
-将移除所有 Dubbo 资源,后续版本将会支持指定文件。
 
-命名空间 dubbo-system 默认不会被移除。如果不再需要用下面命令移除该命名空间
+将移除所有 Dubbo 资源,后续版本将会支持指定文件。命名空间 dubbo-system 默认不会被移除。如果不再需要用下面命令移除该命名空间
 ```bash
 kubectl delete namespace dubbo-system
 ```

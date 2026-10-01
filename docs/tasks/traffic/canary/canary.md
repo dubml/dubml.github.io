@@ -1,28 +1,9 @@
 > 未完成撰写的文档，因为版本迭代过快，跟新版本会存在一定差异，后续会进行补充完善。
 
-> 本任务使用 `samples/moviereview` 示例。
+## 前提条件
+- 已安装 [moviereview](https://github.com/apache/dubbo-kubernetes/tree/master/samples/moviereview) 服务
 
-### 1. 创建命名空间
-
-```bash
-kubectl create ns moviereview
-kubectl label namespace moviereview dubbo-injection=enabled
-```
-
-### 2. 部署服务
-
-```bash
-kubectl apply -f samples/moviereview/deployment.yaml
-```
-
-## 配置灰度流量
-
-同一个父 Service 只保留本任务的 `HTTPRoute`。如果刚执行过流量路由任务，旧的 `reviews-routing` 也会绑定 `reviews`，`grpc-outbound` 会继续看到旧权重。
-
-```bash
-kubectl get httproute -n moviereview
-kubectl -n moviereview delete httproute moviepage-routing reviews-routing
-```
+## 切分流量
 
 将 `reviews` 的 63% 流量分配到 `v1`，37% 流量分配到 `v2`：
 
@@ -50,8 +31,13 @@ spec:
 EOF
 ```
 
-这里没有写 `matches`，因此该规则是默认兜底规则。`dubbod` 默认提供 `proto.XDSTestService/ForwardHTTP` 测试入口，用来按控制面下发的路由发送真实请求。
+## 查看资源信息
 
+```bash
+kubectl get httproute -n moviereview
+```
+
+TODO 过时内容
 ## 验证
 
 先把 17171 转发到本地：
@@ -114,10 +100,8 @@ kubectl -n moviereview patch httproute reviews-canary --type='merge' -p '
 }'
 ```
 
-## 清理
+## 清理资源
 
 ```bash
 kubectl -n moviereview delete httproute reviews-canary
-kubectl delete -f samples/moviereview/deployment.yaml
-kubectl delete ns moviereview
 ```

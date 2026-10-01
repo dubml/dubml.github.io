@@ -513,7 +513,7 @@ label.md-header__button[for="__drawer"] { display: none; }
   backdrop-filter: blur(14px) saturate(120%);
   border-bottom: 1px solid rgba(89, 130, 181, 0.18);
   box-shadow: 0 1px 6px rgba(40, 71, 111, 0.08);
-  font-family: Monaco, Menlo, Consolas, "Liberation Mono", "PingFang SC", "Microsoft YaHei UI", "Microsoft YaHei", monospace;
+  font-family: var(--mesh-font-system, system-ui, sans-serif);
   font-size: 0.68rem;
   line-height: 1.35;
   letter-spacing: 0.015em;
@@ -688,4 +688,184 @@ label.md-header__button[for="__drawer"] { display: none; }
   .md-sidebar--primary,
   .md-overlay,
   .md-nav__icon::before { transition: none !important; }
+}
+
+/* --- Transit Documentation Landing Cards --- */
+.kd-deploy-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin: 1.6rem 0 2.2rem;
+}
+@media (max-width: 640px) {
+  .kd-deploy-cards {
+    grid-template-columns: 1fr;
+  }
+}
+.kd-deploy-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.4rem;
+  border-radius: 0.6rem;
+  border: 1px solid var(--mesh-rule-strong, #D8E1EC);
+  background: var(--mesh-surface, #FFFFFF);
+  text-decoration: none !important;
+  color: inherit !important;
+  transition: all 180ms ease;
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.04);
+}
+.kd-deploy-card:hover {
+  border-color: var(--mesh-accent, #1D5BC4);
+  box-shadow: 0 10px 24px rgba(29, 91, 196, 0.12);
+  transform: translateY(-2px);
+}
+.kd-deploy-card__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+.kd-deploy-card__badge-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  flex-shrink: 0;
+}
+.kd-deploy-card__badge-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+.kd-deploy-card__brand {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--mesh-ink, #1A2332);
+}
+.kd-deploy-card__variant {
+  font-size: 0.64rem;
+  color: var(--mesh-ink-muted, #636F80);
+}
+.kd-deploy-card__title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0 0 0.4rem 0;
+  color: var(--mesh-ink, #1A2332);
+}
+.kd-deploy-card:hover .kd-deploy-card__title {
+  color: var(--mesh-accent, #1D5BC4);
+}
+.kd-deploy-card__desc {
+  font-size: 0.78rem;
+  line-height: 1.55;
+  color: var(--mesh-ink-muted, #636F80);
+  margin: 0;
+}
+.kd-landing-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--mesh-ink-muted, #636F80);
+  text-decoration: none;
+  margin-bottom: 1.2rem;
+  transition: color 160ms ease;
+}
+.kd-landing-back:hover {
+  color: var(--mesh-accent, #1D5BC4);
+}
+.kd-landing-footer-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--mesh-rule, #E2E8F0);
+}
+.kd-landing-footer-link {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--mesh-ink, #1A2332);
+  text-decoration: none;
+  transition: color 160ms ease;
+}
+.kd-landing-footer-link:hover {
+  color: var(--mesh-accent, #1D5BC4);
+}
+
+/* --- Mode Switcher (Sidebar for Standalone / Kubernetes) --- */
+.kd-mode-switcher {
+  padding: 0 0 0.75rem;
+  margin-bottom: 0.6rem;
+  border-bottom: 1px solid var(--mesh-rule, #E2E8F0);
+}
+.kd-mode-select {
+  position: relative;
+  width: 100%;
+}
+.kd-mode-select__trigger {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.45rem 0.65rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--mesh-ink, #1A2332);
+  background: var(--mesh-surface, #FFFFFF);
+  border: 1px solid var(--mesh-rule-strong, #D8E1EC);
+  border-radius: 0.35rem;
+  cursor: pointer;
+  transition: all 160ms ease;
+}
+.kd-mode-select__trigger:hover {
+  border-color: var(--mesh-accent, #1D5BC4);
+}
+.kd-mode-select__caret {
+  width: 0.32rem;
+  height: 0.32rem;
+  border-right: 1.4px solid currentColor;
+  border-bottom: 1.4px solid currentColor;
+  transform: translateY(-0.06rem) rotate(45deg);
+  transition: transform 160ms ease;
+}
+.kd-mode-select:hover .kd-mode-select__caret,
+.kd-mode-select:focus-within .kd-mode-select__caret {
+  transform: translateY(0.04rem) rotate(-135deg);
+}
+.kd-mode-select__menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 0.25rem);
+  left: 0;
+  right: 0;
+  background: var(--mesh-surface, #FFFFFF);
+  border: 1px solid var(--mesh-rule-strong, #D8E1EC);
+  border-radius: 0.35rem;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.12);
+  z-index: 10;
+  padding: 0.25rem;
+}
+.kd-mode-select:hover .kd-mode-select__menu,
+.kd-mode-select:focus-within .kd-mode-select__menu {
+  display: block;
+}
+.kd-mode-select__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.4rem 0.6rem;
+  font-size: 0.78rem;
+  color: var(--mesh-ink, #1A2332);
+  text-decoration: none;
+  border-radius: 0.25rem;
+  transition: background 140ms ease;
+}
+.kd-mode-select__item:hover {
+  background: var(--mesh-accent-light, rgba(29, 91, 196, 0.055));
+  color: var(--mesh-accent, #1D5BC4);
+}
+.kd-mode-select__item.is-active {
+  font-weight: 600;
+  color: var(--mesh-accent, #1D5BC4);
+  background: var(--mesh-accent-light, rgba(29, 91, 196, 0.08));
 }
