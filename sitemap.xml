@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>https://dubml.github.io/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/concepts/extensibility/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/concepts/extensibility/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/concepts/extensibility/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/concepts/observability/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/concepts/observability/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/concepts/observability/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/concepts/scalability/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/concepts/scalability/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/concepts/scalability/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/concepts/security/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/concepts/security/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/concepts/security/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/concepts/traffic-management/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/concepts/traffic-management/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/concepts/traffic-management/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/example/example/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/example/example/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/example/example/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/operation/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/operation/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/operation/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/overview/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/overview/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/overview/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/reference/application-standard-metrics/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/reference/application-standard-metrics/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/reference/application-standard-metrics/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/release/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/release/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/release/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/setup/install/dubboctl/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/setup/install/dubboctl/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/setup/install/dubboctl/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/setup/install/helm/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/setup/install/helm/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/setup/install/helm/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/tasks/extensibility/service-entry/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/tasks/extensibility/service-entry/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/tasks/extensibility/service-entry/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/tasks/extensibility/virtual-machines/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/tasks/extensibility/virtual-machines/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/tasks/extensibility/virtual-machines/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/tasks/observability/logs/access-logs/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/tasks/observability/logs/access-logs/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/tasks/observability/logs/access-logs/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/tasks/observability/metrics/metrics/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/tasks/observability/metrics/metrics/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/tasks/observability/metrics/metrics/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/tasks/scalability/activation/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/tasks/scalability/activation/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/tasks/scalability/activation/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/tasks/security/jwt/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/tasks/security/jwt/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/tasks/security/jwt/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/tasks/security/mtls/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/tasks/security/mtls/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/tasks/security/mtls/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/tasks/traffic/canary/canary/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/tasks/traffic/canary/canary/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/tasks/traffic/canary/canary/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/tasks/traffic/circuit-breaking/circuit-breaking/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/tasks/traffic/circuit-breaking/circuit-breaking/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/tasks/traffic/circuit-breaking/circuit-breaking/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/tasks/traffic/egress/egress/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/tasks/traffic/egress/egress/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/tasks/traffic/egress/egress/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/tasks/traffic/fault-injection/fault-injection/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/tasks/traffic/fault-injection/fault-injection/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/tasks/traffic/fault-injection/fault-injection/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/tasks/traffic/ingress/gateway-api/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/tasks/traffic/ingress/gateway-api/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/tasks/traffic/ingress/gateway-api/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/tasks/traffic/request-retries/request-retries/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/tasks/traffic/request-retries/request-retries/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/tasks/traffic/request-retries/request-retries/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/tasks/traffic/request-timeouts/request-timeouts/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/tasks/traffic/request-timeouts/request-timeouts/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/tasks/traffic/request-timeouts/request-timeouts/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/tasks/traffic/routing/routing/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/tasks/traffic/routing/routing/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/tasks/traffic/routing/routing/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/transit/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/transit/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/transit/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/transit/kubernetes/a2a/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/transit/kubernetes/a2a/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/transit/kubernetes/a2a/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/transit/kubernetes/concepts/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/transit/kubernetes/concepts/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/transit/kubernetes/concepts/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/transit/kubernetes/install/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/transit/kubernetes/install/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/transit/kubernetes/install/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/transit/kubernetes/llm/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/transit/kubernetes/llm/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/transit/kubernetes/llm/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/transit/kubernetes/mcp/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/transit/kubernetes/mcp/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/transit/kubernetes/mcp/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/transit/standalone/a2a/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/transit/standalone/a2a/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/transit/standalone/a2a/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/transit/standalone/concepts/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/transit/standalone/concepts/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/transit/standalone/concepts/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/transit/standalone/install/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/transit/standalone/install/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/transit/standalone/install/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/transit/standalone/llm/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/transit/standalone/llm/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/transit/standalone/llm/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/transit/standalone/mcp/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/transit/standalone/mcp/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/transit/standalone/mcp/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/en/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/en/concepts/extensibility/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/concepts/extensibility/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/concepts/extensibility/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/en/concepts/observability/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/concepts/observability/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/concepts/observability/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/en/concepts/scalability/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/concepts/scalability/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/concepts/scalability/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/en/concepts/security/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/concepts/security/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/concepts/security/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/en/concepts/traffic-management/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/concepts/traffic-management/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/concepts/traffic-management/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/en/example/example/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/example/example/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/example/example/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/en/operation/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/operation/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/operation/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/en/overview/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/overview/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/overview/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/en/reference/application-standard-metrics/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/reference/application-standard-metrics/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/reference/application-standard-metrics/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/en/release/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/release/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/release/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/en/setup/install/dubboctl/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/setup/install/dubboctl/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/setup/install/dubboctl/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/en/setup/install/helm/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/setup/install/helm/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/setup/install/helm/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/en/tasks/extensibility/service-entry/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/tasks/extensibility/service-entry/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/tasks/extensibility/service-entry/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/en/tasks/extensibility/virtual-machines/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/tasks/extensibility/virtual-machines/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/tasks/extensibility/virtual-machines/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/en/tasks/observability/logs/access-logs/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/tasks/observability/logs/access-logs/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/tasks/observability/logs/access-logs/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/en/tasks/observability/metrics/metrics/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/tasks/observability/metrics/metrics/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/tasks/observability/metrics/metrics/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/en/tasks/scalability/activation/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/tasks/scalability/activation/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/tasks/scalability/activation/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/en/tasks/security/jwt/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/tasks/security/jwt/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/tasks/security/jwt/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/en/tasks/security/mtls/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/tasks/security/mtls/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/tasks/security/mtls/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/en/tasks/traffic/canary/canary/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/tasks/traffic/canary/canary/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/tasks/traffic/canary/canary/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/en/tasks/traffic/circuit-breaking/circuit-breaking/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/tasks/traffic/circuit-breaking/circuit-breaking/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/tasks/traffic/circuit-breaking/circuit-breaking/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/en/tasks/traffic/egress/egress/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/tasks/traffic/egress/egress/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/tasks/traffic/egress/egress/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/en/tasks/traffic/fault-injection/fault-injection/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/tasks/traffic/fault-injection/fault-injection/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/tasks/traffic/fault-injection/fault-injection/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/en/tasks/traffic/ingress/gateway-api/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/tasks/traffic/ingress/gateway-api/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/tasks/traffic/ingress/gateway-api/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/en/tasks/traffic/request-retries/request-retries/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/tasks/traffic/request-retries/request-retries/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/tasks/traffic/request-retries/request-retries/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/en/tasks/traffic/request-timeouts/request-timeouts/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/tasks/traffic/request-timeouts/request-timeouts/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/tasks/traffic/request-timeouts/request-timeouts/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/en/tasks/traffic/routing/routing/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/tasks/traffic/routing/routing/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/tasks/traffic/routing/routing/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/en/transit/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/transit/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/transit/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/en/transit/kubernetes/a2a/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/transit/kubernetes/a2a/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/transit/kubernetes/a2a/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/en/transit/kubernetes/concepts/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/transit/kubernetes/concepts/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/transit/kubernetes/concepts/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/en/transit/kubernetes/install/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/transit/kubernetes/install/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/transit/kubernetes/install/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/en/transit/kubernetes/llm/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/transit/kubernetes/llm/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/transit/kubernetes/llm/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/en/transit/kubernetes/mcp/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/transit/kubernetes/mcp/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/transit/kubernetes/mcp/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/en/transit/standalone/a2a/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/transit/standalone/a2a/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/transit/standalone/a2a/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/en/transit/standalone/concepts/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/transit/standalone/concepts/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/transit/standalone/concepts/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/en/transit/standalone/install/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/transit/standalone/install/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/transit/standalone/install/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/en/transit/standalone/llm/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/transit/standalone/llm/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/transit/standalone/llm/"/>
+    </url>
+    <url>
+        <loc>https://dubml.github.io/en/transit/standalone/mcp/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dubml.github.io/en/transit/standalone/mcp/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://dubml.github.io/transit/standalone/mcp/"/>
+    </url>
+</urlset>

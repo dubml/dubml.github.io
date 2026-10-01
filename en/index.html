@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en" data-md-color-scheme="default">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home - Dubbo Service Mesh</title>
+  <link rel="canonical" href="https://dubml.github.io/en/">
+  <link rel="icon" type="image/svg+xml" href="../assets/static/dubbo.svg?v=20261001-dubbo-v3">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/static/dubbo-32x32.png?v=20261001-dubbo-v3">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/static/dubbo-16x16.png?v=20261001-dubbo-v3">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/static/dubbo-180x180.png?v=20261001-dubbo-v3">
+  <link rel="shortcut icon" href="../assets/static/dubbo.ico?v=20261001-dubbo-v3">
+  <meta name="generator" content="mkdocs-1.6.1">
+  <link rel="stylesheet" href="../assets/kd-theme.css?v=20260930-system-fonts-r1">
+  <link rel="stylesheet" href="../assets/custom.css?v=20260930-system-fonts-r1">
+  <script id="__config" type="application/json">{"base": ".", "lang": "en"}</script>
+  
+  
+  <style>
+    :root {
+      --t-bg: #EFF3F9;
+      --t-bg-lift: #E3EBF6;
+      --t-surface: #FFFFFF;
+      --t-surface-2: #E4EAF3;
+      --t-line: rgba(26, 35, 50, 0.10);
+      --t-line-strong: rgba(26, 35, 50, 0.26);
+      --t-ink: #1A2332;
+      --t-ink-2: #3E4859;
+      --t-ink-3: #636F80;
+      --t-blue: #1D5BC4;
+      --t-blue-bright: #1749A3;
+      --t-green: #178A5B;
+      /* Headings and labels use the system UI font; code stays monospace. */
+      --t-sans: var(--ds-font-sans);
+      --t-mono: var(--t-sans);
+      /* Terminal and code panels. */
+      --t-code: var(--ds-font-mono);
+      --t-ease: cubic-bezier(.22, .8, .36, 1);
+    }
+
+    /* 首页整体深色；隐藏空正文区 */
+    .md-main { display: none; }
+    /* 与文档页一致的墨蓝层次背景：固定在视口上，滚动时形成纵深 */
+    body {
+      background:
+        radial-gradient(110% 65% at 82% -10%, rgba(29, 91, 196, 0.07), transparent 55%),
+        radial-gradient(85% 60% at -12% 40%, rgba(23, 138, 91, 0.045), transparent 55%),
+        linear-gradient(180deg, var(--t-bg-lift) 0%, var(--t-bg) 58%) !important;
+      background-attachment: fixed !important;
+      background-color: var(--t-bg) !important;
+    }
+    .md-container { background: transparent !important; }
+    /* 页头沉入动态背景，且随页面滚走（不吸顶悬浮在正文上） */
+    .md-header,
+    .md-header[data-md-state="shadow"],
+    .md-header--shadow {
+      /* 随页面滚走（非吸顶），但要浮在上移的 hero 之上，否则导航不可点 */
+      position: relative;
+      z-index: 3;
+      background: transparent !important;
+      border-bottom: 0 !important;
+      box-shadow: none !important;
+      backdrop-filter: none !important;
+      -webkit-backdrop-filter: none !important;
+    }
+    .md-tabs { background: transparent !important; border-bottom: 1px solid var(--t-line) !important; }
+
+    .kd-home {
+      background: transparent;
+      color: var(--t-ink);
+      font-family: var(--t-sans);
+      font-size: 16px;
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+    .kd-home * { box-sizing: border-box; }
+    .kd-home a { color: inherit; text-decoration: none; }
+    .kd-wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+    .kd-home :focus-visible { outline: 2px solid var(--t-blue); outline-offset: 2px; }
+    .kd-home ::selection { background: var(--t-blue); color: #FFFFFF; }
+
+    /* ---------- 首屏：动态网格星座背景 ---------- */
+    .kd-hero {
+      position: relative;
+      overflow: hidden;
+      /* 页头/标签栏透明叠在背景上，这里补回它们的高度 */
+      margin-top: -5rem;
+      padding: calc(5rem + 96px) 0 0;
+    }
+    @media screen and (max-width: 76.1875em) {
+      .kd-hero { margin-top: -2.6rem; padding-top: calc(2.6rem + 72px); }
+    }
+    .kd-net {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+    }
+    /* 底部渐隐，让背景动画自然融进正文 */
+    .kd-hero::after {
+      content: "";
+      position: absolute;
+      left: 0; right: 0; bottom: 0;
+      height: 120px;
+      background: linear-gradient(180deg, transparent, var(--t-bg));
+      pointer-events: none;
+      z-index: 1;
+    }
+    .kd-hero-inner {
+      position: relative;
+      z-index: 2;
+      max-width: 860px;
+      padding-bottom: 120px;
+      text-align: center;
+    }
+    /* 宽屏时在内容下方留出居中的粒子字带 */
+    @media (min-width: 960px) {
+      .kd-hero-inner { padding-bottom: 420px; }
+    }
+    .kd-hero h1 {
+      margin: 0;
+      font-family: var(--t-mono);
+      font-size: clamp(30px, 3.8vw, 50px);
+      line-height: 1.2;
+      font-weight: 700;
+      letter-spacing: -.02em;
+      color: var(--t-ink);
+    }
+    .kd-hero-sub {
+      margin: 26px 0 0;
+      font-size: clamp(16px, 1.6vw, 18px);
+      line-height: 1.85;
+      color: var(--t-ink-2);
+    }
+    /* 容器收缩到副标题一行的宽度，按钮再等分它 —— 两端与文字首尾对齐。
+       上限按 38em：为英文副标题保留足够宽度，避免不必要的换行，
+       两端对齐的前提就没了。`max-content` 保证中文不会因此留白。 */
+    .kd-hero-lead {
+      width: max-content;
+      max-width: min(38em, 100%);
+      margin-inline: auto;
+    }
+    /* 按钮切角吃掉 14px 视觉间距，gap 相应加大 */
+    .kd-hero-actions { margin-top: 38px; display: flex; justify-content: center; gap: 28px; flex-wrap: wrap; }
+    .kd-hero-actions .kd-btn { flex: 1; }
+    /* 个性化按钮：切角轮廓 + 字号随视口自适应 */
+    .kd-btn {
+      position: relative;
+      display: inline-flex; align-items: center; justify-content: center; gap: .5em;
+      font-family: var(--t-mono);
+      font-size: clamp(13.5px, 0.6vw + 9px, 16.5px);
+      font-weight: 600;
+      letter-spacing: .02em;
+      padding: .95em 2em;
+      /* Labels are two words; without this the flex row splits them across two
+         lines and the cut corners no longer line up between the buttons. */
+      white-space: nowrap;
+      clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 14px 100%, 0 calc(100% - 14px));
+      transition: background .2s ease, color .2s ease, transform .2s ease, box-shadow .2s ease;
+    }
+    .kd-home .kd-btn-solid { background: var(--t-blue); color: #FFFFFF; }
+    .kd-home .kd-btn-solid:hover { background: var(--t-blue-bright); color: #FFFFFF; transform: translateY(-1px); }
+    .kd-home .kd-btn-line {
+      color: var(--t-ink);
+      background: rgba(26, 35, 50, .04);
+      box-shadow: inset 0 0 0 1px var(--t-line-strong);
+    }
+    .kd-home .kd-btn-line:hover { box-shadow: inset 0 0 0 1px var(--t-ink); background: rgba(26, 35, 50, .07); }
+    .kd-home .kd-btn-feature { color: #000000; background: #FFFFFF; box-shadow: inset 0 0 0 1px rgba(26, 35, 50, .18); }
+    .kd-home .kd-btn-feature:hover { color: #000000; background: #FFFFFF; box-shadow: inset 0 0 0 1px #000000; transform: translateY(-1px); }
+
+    @media (prefers-reduced-motion: no-preference) {
+      .kd-hero h1, .kd-hero-sub, .kd-hero-actions { animation: kd-rise .45s var(--t-ease) both; }
+      .kd-hero-sub { animation-delay: .06s; }
+      .kd-hero-actions { animation-delay: .12s; }
+    }
+    @keyframes kd-rise {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: none; }
+    }
+    @media (max-width: 480px) {
+      .kd-hero-actions { display: grid; grid-template-columns: 1fr; width: 100%; }
+    }
+
+    /* ---------- 滚动渐显 ---------- */
+    @media (prefers-reduced-motion: no-preference) {
+      .kd-reveal {
+        opacity: 0;
+        transform: translateY(14px);
+        transition: opacity .6s var(--t-ease), transform .6s var(--t-ease);
+      }
+      .kd-reveal.kd-in { opacity: 1; transform: none; }
+    }
+
+    /* ---------- 章节 ---------- */
+    .kd-section { padding: 100px 0; border-top: 1px solid var(--t-line); }
+    .kd-h { margin: 0 0 18px; }
+    .kd-h h2 {
+      margin: 0;
+      font-family: var(--t-mono);
+      font-size: clamp(24px, 2.8vw, 34px);
+      font-weight: 700;
+      letter-spacing: -.01em;
+      line-height: 1.3;
+      color: var(--t-ink);
+    }
+    @media (max-width: 620px) {
+      .kd-h h2 { font-size: clamp(18px, 6vw, 26px); }
+    }
+    #why .kd-h { text-align: center; }
+    #why .kd-h h2 { font-size: clamp(30px, 3.6vw, 42px); }
+    @media (max-width: 620px) {
+      #why .kd-h h2 { font-size: clamp(24px, 8vw, 32px); }
+    }
+    .kd-lead { margin: 0 0 52px; max-width: 44em; color: var(--t-ink-2); font-size: 16px; }
+    /* ---------- 优点：细线网格 ---------- */
+    .kd-feats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .kd-feat {
+      padding: 30px 28px 34px;
+    }
+    .kd-feat-icon {
+      display: block;
+      width: 128px;
+      height: 128px;
+      margin: 0 auto 30px;
+      color: #0D82BC;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 1.3;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .kd-feat-icon-fill {
+      fill: currentColor;
+      stroke: none;
+    }
+    .kd-feat h3 { margin: 0 0 8px; font-size: 17.5px; font-weight: 650; color: var(--t-ink); text-align: center; }
+    .kd-feat p { margin: 0; font-size: 14.5px; line-height: 1.7; color: var(--t-ink-3); text-align: center; }
+    @media (max-width: 860px) { .kd-feats { grid-template-columns: 1fr; } }
+
+    /* ---------- 迈向云原生：走马灯 ---------- */
+    .kd-eco {
+      margin-top: 56px;
+      overflow: hidden;
+      -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+      mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+    }
+    .kd-eco-track { display: flex; width: max-content; }
+    .kd-eco-group {
+      flex: none;
+      display: flex;
+      align-items: center;
+      gap: 84px;
+      padding-right: 84px;
+    }
+    .kd-eco span {
+      font-family: var(--t-mono);
+      font-size: 21px;
+      font-weight: 600;
+      letter-spacing: .01em;
+      color: var(--t-ink-3);
+      white-space: nowrap;
+    }
+    @media (prefers-reduced-motion: no-preference) {
+      .kd-eco-track { animation: kd-marquee 30s linear infinite; }
+      .kd-eco:hover .kd-eco-track { animation-play-state: paused; }
+    }
+    @keyframes kd-marquee { to { transform: translateX(-50%); } }
+    @media (prefers-reduced-motion: reduce) {
+      .kd-eco { mask-image: none; -webkit-mask-image: none; }
+      .kd-eco-track { width: auto; }
+      .kd-eco-group { flex-wrap: wrap; gap: 18px 44px; padding-right: 0; }
+      .kd-eco-group[aria-hidden="true"] { display: none; }
+    }
+
+    /* ---------- FAQ ---------- */
+    .kd-faq { max-width: none; }
+    .kd-faq details { border-bottom: 1px solid var(--t-line); }
+    .kd-faq summary {
+      display: flex; align-items: center; justify-content: space-between; gap: 20px;
+      padding: 22px 4px; cursor: pointer; list-style: none;
+      font-size: 16.5px; font-weight: 600; color: var(--t-ink);
+      transition: color .18s ease;
+    }
+    .kd-faq summary::-webkit-details-marker { display: none; }
+    .kd-faq summary:hover { color: var(--t-blue); }
+    .kd-faq summary::after {
+      content: ""; flex: none;
+      width: 9px; height: 9px;
+      border-right: 2px solid var(--t-ink-3); border-bottom: 2px solid var(--t-ink-3);
+      transform: rotate(45deg); margin-right: 6px;
+      transition: transform .25s var(--t-ease);
+    }
+    .kd-faq details[open] summary::after { transform: rotate(-135deg); }
+    .kd-faq .kd-faq-a { padding: 0 4px 26px; max-width: 44em; margin: 0; color: var(--t-ink-2); font-size: 15px; }
+    .kd-faq .kd-faq-a a { color: var(--t-blue); border-bottom: 1px solid rgba(29, 91, 196, .35); }
+    .kd-faq .kd-faq-a a:hover { color: var(--t-blue-bright); }
+    .kd-faq .kd-faq-a code {
+      font-family: var(--t-mono); font-size: .85em;
+      background: rgba(26, 35, 50, .05);
+      border: 1px solid var(--t-line);
+      padding: .05em .35em; color: var(--t-blue);
+    }
+
+    /* ---------- 页脚 ---------- */
+    .kd-footer {
+      border-top: 1px solid var(--t-line);
+      color: var(--t-ink-2);
+      padding: 60px 0 40px;
+    }
+    .kd-footer-legal {
+      padding-top: 22px;
+      display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+      font-family: var(--t-mono);
+      font-size: 12px; line-height: 1.6; color: var(--t-ink-3);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .kd-btn, .kd-row, .kd-row .go, .kd-feat, .kd-faq summary::after { transition: none; }
+    }
+  </style>
+
+</head>
+<body dir="ltr">
+
+<aside class="kd-build-notice" role="status" aria-label="Documentation status">
+  <span>
+    Documentation is under construction. All content is currently unavailable. A new version is coming soon.
+  </span>
+</aside>
+
+<input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+<input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+<label class="md-overlay" for="__drawer"></label>
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Dubbo Service Mesh">
+    <a href="./" class="md-header__button md-logo" aria-label="Dubbo Service Mesh">
+      <img src="../assets/static/dubbo.svg" width="200" height="200" alt="Dubbo Service Mesh logo">
+    </a>
+    <label class="md-header__button md-icon" for="__drawer" aria-label="Menu">
+      <svg viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title">
+      <div class="md-header__ellipsis">
+        <span class="md-header__topic">Dubbo Service Mesh</span>
+      </div>
+    </div>
+    <div class="md-header__spacer"></div><div class="md-header__option">
+      <div class="md-select">
+        <button class="md-header__button md-icon" aria-label="Language">
+          <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Z"/></svg>
+        </button>
+        <div class="md-select__inner">
+          <ul class="md-select__list">
+            <li class="md-select__item">
+              <a href="../" hreflang="zh" class="md-select__link">简体中文</a>
+            </li>
+            <li class="md-select__item">
+              <a href="./" hreflang="en" class="md-select__link">English</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <nav class="kd-topnav" aria-label="Site"><div class="kd-topnav__menu">
+        <a class="kd-topnav__link kd-topnav__trigger" href="transit/">
+          Transit<span class="kd-topnav__caret" aria-hidden="true"></span>
+        </a>
+        <div class="kd-topnav__panel">
+          <div class="kd-topnav__panel-inner">
+            <a class="kd-topnav__panel-link" href="transit/standalone/concepts/">
+              <span class="kd-topnav__panel-title">Standalone</span>
+            </a>
+            <a class="kd-topnav__panel-link" href="transit/kubernetes/concepts/">
+              <span class="kd-topnav__panel-title">Kubernetes</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <a class="kd-topnav__link" href="overview/">Docs</a>
+      <a class="kd-topnav__link" href="release/">News</a>
+      <a class="kd-topnav__link" href="about/">About</a>
+      <a class="kd-topnav__icon" href="https://github.com/apache/dubbo-kubernetes" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg viewBox="0 0 24 24"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3Z"/></svg>
+      </a>
+    </nav>
+  </nav>
+</header>
+
+
+  
+  
+  
+  <div class="kd-home">
+
+    <section class="kd-hero">
+      <canvas class="kd-net" id="kd-net" aria-hidden="true"></canvas>
+      <div class="kd-wrap kd-hero-inner">
+        <h1>The runtime is the mesh.</h1><div class="kd-hero-lead">
+          <p class="kd-hero-sub">No proxies — and still all the value of a service mesh.</p>
+          <div class="kd-hero-actions">
+            <a class="kd-btn kd-btn-solid" href="setup/install/dubboctl/">Get started</a>
+            <a class="kd-btn kd-btn-feature" href="release/">Release Notes</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="kd-section" id="ecosystem">
+      <div class="kd-wrap kd-reveal">
+        <div class="kd-h"><h2>Aligned with the Mainstream Cloud Native Ecosystem</h2></div>
+        <div class="kd-eco" aria-label="Ecosystem integrations">
+          <div class="kd-eco-track">
+            <div class="kd-eco-group">
+              <span>Kubernetes</span>
+              <span>Gateway API</span>
+              <span>Prometheus</span>
+              <span>Grafana</span>
+              <span>OpenTelemetry</span>
+              <span>Zipkin</span>
+              <span>Jaeger</span>
+            </div>
+            <div class="kd-eco-group" aria-hidden="true">
+              <span>Kubernetes</span>
+              <span>Gateway API</span>
+              <span>Prometheus</span>
+              <span>Grafana</span>
+              <span>OpenTelemetry</span>
+              <span>Zipkin</span>
+              <span>Jaeger</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="kd-footer">
+      <div class="kd-wrap">
+        <div class="kd-footer-legal">
+          <span>© 2026 The Apache Dubbo Community</span>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script>
+    (function () {
+      var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      /* ---------- 动态背景：星座漂移，周期性汇聚成 DUBBO ---------- */
+      var canvas = document.getElementById('kd-net');
+      if (canvas && canvas.getContext) {
+        var ctx = canvas.getContext('2d');
+        var hero = canvas.parentElement;
+        var dpr = Math.min(window.devicePixelRatio || 1, 2);
+        var W = 0, H = 0;
+        var nodes = [];
+        var targets = [];
+        var rafId = null;
+        var LINK = 130;
+        var GLYPH_LINK = 20;       /* 字形内部的短连线，只沿笔画相连 */
+        var mode = 'float';        /* float → form → hold → disperse → float */
+        var modeUntil = 0;         /* 当前状态的截止时间戳 */
+        var freeze = false;        /* ?kdword：冻结在成字态 */
+        var FLOAT_MS = 6500, HOLD_MS = 4500, FIRST_FLOAT_MS = 700;
+
+        /* 手工点阵字模："Dubbo Mesh" 逐字定义，与窗口尺寸/相位无关，渲染永远一致（窄屏不排字） */
+        var WORD = 'Dubbo Mesh';
+        var GLYPHS = {
+          'D': ['', '#####.', '##..##', '##..##', '##..##', '##..##', '##..##', '##..##', '######', '#####.'],
+          'u': ['', '', '', '##..##', '##..##', '##..##', '##..##', '##..##', '######', '.#####'],
+          'b': ['##....', '##....', '##....', '#####.', '##..##', '##..##', '##..##', '##..##', '######', '#####.'],
+          'o': ['', '', '', '.####.', '##..##', '##..##', '##..##', '##..##', '######', '.####.'],
+          'M': ['', '##...##', '###.###', '##.#.##', '##.#.##', '##.#.##', '##...##', '##...##', '##...##', '##...##'],
+          'e': ['', '', '', '..####.', '.##..##', '##...##', '#######', '##.....', '.######', '..#####'],
+          's': ['', '', '', '.#####', '##....', '##....', '.####.', '....##', '....##', '#####.'],
+          'h': ['##....', '##....', '##....', '#####.', '##..##', '##..##', '##..##', '##..##', '##..##', '##..##'],
+          ' ': []
+        };
+        var GLYPH_ADV = 7.5;      /* 等宽字距（网格列） */
+        var sampleWord = function () {
+          targets = [];
+          if (W < 960 || H < 480) return;
+          var inner = hero.querySelector('.kd-hero-inner');
+          /* 内容真实底边（扣除为字带预留的 padding，再留 80px 呼吸） */
+          var innerBottom = inner ? (inner.offsetTop + inner.offsetHeight - 340) : H * 0.55;
+          var zoneW = Math.min(W * 0.7, 1100);
+          var totalCols = (WORD.length - 1) * GLYPH_ADV + 6;
+          var unit = zoneW / totalCols;
+          var gridW = totalCols * unit;
+          var gridH = 9 * unit;
+          /* 字带 = 内容底边 → 底部渐隐之上；放不下就放弃排字 */
+          var band = H - 60 - innerBottom;
+          if (band < gridH + 120) return;
+          /* 字形水平居中，垂直居中于字带 */
+          var x0 = (W - gridW) / 2;
+          var y0 = innerBottom + band / 2 - gridH / 2;
+          for (var i = 0; i < WORD.length; i++) {
+            var rows = GLYPHS[WORD.charAt(i)] || [];
+            for (var r = 0; r < rows.length; r++) {
+              for (var c = 0; c < rows[r].length; c++) {
+                if (rows[r].charAt(c) === '#') {
+                  targets.push({ x: x0 + (i * GLYPH_ADV + c) * unit, y: y0 + r * unit });
+                }
+              }
+            }
+          }
+          /* 打散配对顺序，汇聚时轨迹交错更自然 */
+          for (var m = targets.length - 1; m > 0; m--) {
+            var rr = Math.floor(Math.random() * (m + 1));
+            var tmp = targets[m]; targets[m] = targets[rr]; targets[rr] = tmp;
+          }
+        };
+
+        var resize = function () {
+          W = hero.clientWidth;
+          H = hero.clientHeight;
+          canvas.width = W * dpr;
+          canvas.height = H * dpr;
+          canvas.style.width = W + 'px';
+          canvas.style.height = H + 'px';
+          ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+          sampleWord();
+          /* 粒子数：至少覆盖字形点数，另留一批自由漂移的 */
+          var count = Math.min(380, Math.max(48, Math.floor(W * H / 16000), targets.length + 40));
+          while (nodes.length < count) {
+            nodes.push({
+              x: Math.random() * W,
+              y: Math.random() * H,
+              vx: (Math.random() - .5) * .3,
+              vy: (Math.random() - .5) * .3,
+              r: Math.random() * 1.4 + .8,
+              t: -1
+            });
+          }
+          nodes.length = count;
+          assign();
+        };
+
+        /* 把前 targets.length 个粒子分配到字形点 */
+        var assign = function () {
+          for (var i = 0; i < nodes.length; i++) {
+            nodes[i].t = (i < targets.length) ? i : -1;
+          }
+        };
+
+        /* 散开：给每个粒子一个新的随机"家"，缓动回去后恢复漂移 */
+        var scatter = function () {
+          for (var i = 0; i < nodes.length; i++) {
+            nodes[i].hx = Math.random() * W;
+            nodes[i].hy = Math.random() * H;
+            nodes[i].vx = (Math.random() - .5) * .3;
+            nodes[i].vy = (Math.random() - .5) * .3;
+          }
+        };
+
+        var frame = function (now) {
+          /* 状态机：float → form → hold → disperse → float */
+          if (!freeze && targets.length && now > modeUntil) {
+            if (mode === 'float') {
+              mode = 'form';
+              modeUntil = Infinity; /* 汇聚完成后进入 hold */
+            } else if (mode === 'hold') {
+              mode = 'disperse';
+              modeUntil = Infinity; /* 回位完成后进入 float */
+              scatter();
+            }
+          }
+
+          ctx.clearRect(0, 0, W, H);
+          var i, j, a, b, dx, dy, d, tgt;
+          var settledAll = true;
+
+          for (i = 0; i < nodes.length; i++) {
+            a = nodes[i];
+            tgt = null;
+            if (a.t >= 0) {
+              if (mode === 'form' || mode === 'hold') tgt = targets[a.t];
+              else if (mode === 'disperse') tgt = { x: a.hx, y: a.hy };
+            }
+            if (tgt) {
+              /* 向目标点收敛（字形点或散开后的新家） */
+              dx = tgt.x - a.x; dy = tgt.y - a.y;
+              a.x += dx * .07;
+              a.y += dy * .07;
+              a.settled = (mode !== 'disperse') && (dx * dx + dy * dy < 4);
+              if (dx * dx + dy * dy >= 4) settledAll = false;
+            } else {
+              a.settled = false;
+              a.x += a.vx; a.y += a.vy;
+              if (a.x < -20) a.x = W + 20; else if (a.x > W + 20) a.x = -20;
+              if (a.y < -20) a.y = H + 20; else if (a.y > H + 20) a.y = -20;
+            }
+          }
+          if (settledAll && !freeze) {
+            if (mode === 'form') {
+              mode = 'hold';
+              modeUntil = now + HOLD_MS;
+            } else if (mode === 'disperse') {
+              mode = 'float';
+              modeUntil = now + FLOAT_MS;
+            }
+          }
+
+          ctx.lineWidth = 1;
+          for (i = 0; i < nodes.length; i++) {
+            a = nodes[i];
+            for (j = i + 1; j < nodes.length; j++) {
+              b = nodes[j];
+              /* 字形点只沿笔画短连；漂移点之间保持星座长连线；两者之间不连（避免糊字） */
+              if (a.settled !== b.settled) continue;
+              var lim = a.settled ? GLYPH_LINK : LINK;
+              dx = a.x - b.x; dy = a.y - b.y;
+              d = dx * dx + dy * dy;
+              if (d < lim * lim) {
+                var al = a.settled
+                  ? 0.35 * (1 - Math.sqrt(d) / lim)
+                  : 0.16 * (1 - Math.sqrt(d) / lim);
+                ctx.strokeStyle = 'rgba(45, 96, 179, ' + al.toFixed(3) + ')';
+                ctx.beginPath();
+                ctx.moveTo(a.x, a.y);
+                ctx.lineTo(b.x, b.y);
+                ctx.stroke();
+              }
+            }
+          }
+          for (i = 0; i < nodes.length; i++) {
+            a = nodes[i];
+            ctx.fillStyle = a.settled ? 'rgba(23, 73, 163, .9)' : 'rgba(29, 91, 196, .5)';
+            ctx.beginPath();
+            ctx.arc(a.x, a.y, a.settled ? 1.7 : a.r, 0, Math.PI * 2);
+            ctx.fill();
+          }
+          rafId = requestAnimationFrame(frame);
+        };
+
+        var start = function () {
+          if (rafId === null) {
+            rafId = requestAnimationFrame(function (t) {
+              if (modeUntil === 0) modeUntil = t + FIRST_FLOAT_MS;
+              frame(t);
+            });
+          }
+        };
+        var stop = function () { if (rafId !== null) { cancelAnimationFrame(rafId); rafId = null; } };
+
+        resize();
+        /* resize 防抖；若正处于成字状态，重排后把粒子直接钉回新字点，避免整团迁移 */
+        var resizeTimer = null;
+        window.addEventListener('resize', function () {
+          clearTimeout(resizeTimer);
+          resizeTimer = setTimeout(function () {
+            resize();
+            if (mode === 'form' || mode === 'hold') {
+              for (var ri = 0; ri < nodes.length; ri++) {
+                if (nodes[ri].t >= 0 && targets[nodes[ri].t]) {
+                  nodes[ri].x = targets[nodes[ri].t].x;
+                  nodes[ri].y = targets[nodes[ri].t].y;
+                }
+              }
+            }
+          }, 150);
+        }, { passive: true });
+
+        /* ?kdword —— 冻结在成字终态（调试/预览用） */
+        if (/[?&]kdword/.test(location.search) && targets.length) {
+          for (var pi = 0; pi < nodes.length; pi++) {
+            if (nodes[pi].t >= 0) {
+              nodes[pi].x = targets[nodes[pi].t].x;
+              nodes[pi].y = targets[nodes[pi].t].y;
+            }
+          }
+          mode = 'form';
+          modeUntil = Infinity;
+          freeze = true;
+        }
+
+        if (reduced) {
+          /* 无动效偏好：直接排出 DUBBO 的静态一帧（窄屏为静态星座） */
+          for (var si = 0; si < nodes.length; si++) {
+            if (si < targets.length) {
+              nodes[si].x = targets[si].x;
+              nodes[si].y = targets[si].y;
+              nodes[si].settled = true;
+            }
+          }
+          var i2, j2, a2, b2, dx2, dy2, d2;
+          ctx.lineWidth = 1;
+          for (i2 = 0; i2 < nodes.length; i2++) {
+            a2 = nodes[i2];
+            for (j2 = i2 + 1; j2 < nodes.length; j2++) {
+              b2 = nodes[j2];
+              if (a2.settled !== b2.settled) continue;
+              var lim2 = a2.settled ? GLYPH_LINK : LINK;
+              dx2 = a2.x - b2.x; dy2 = a2.y - b2.y;
+              d2 = dx2 * dx2 + dy2 * dy2;
+              if (d2 < lim2 * lim2) {
+                var al2 = a2.settled ? 0.35 : 0.16;
+                ctx.strokeStyle = 'rgba(45, 96, 179, ' + (al2 * (1 - Math.sqrt(d2) / lim2)).toFixed(3) + ')';
+                ctx.beginPath(); ctx.moveTo(a2.x, a2.y); ctx.lineTo(b2.x, b2.y); ctx.stroke();
+              }
+            }
+            ctx.fillStyle = a2.settled ? 'rgba(23, 73, 163, .8)' : 'rgba(29, 91, 196, .5)';
+            ctx.beginPath(); ctx.arc(a2.x, a2.y, a2.r, 0, Math.PI * 2); ctx.fill();
+          }
+        } else {
+          start();
+          document.addEventListener('visibilitychange', function () {
+            if (document.hidden) stop(); else start();
+          });
+        }
+      }
+
+      /* ---------- 滚动渐显 ---------- */
+      if (!reduced && 'IntersectionObserver' in window) {
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('kd-in');
+              io.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.kd-reveal').forEach(function (el) { io.observe(el); });
+      } else {
+        document.querySelectorAll('.kd-reveal').forEach(function (el) { el.classList.add('kd-in'); });
+      }
+    })();
+  </script>
+
+
+<div class="md-container" data-md-component="container">
+  <main class="md-main" data-md-component="main">
+    <div class="md-main__inner md-grid">
+
+      <div class="md-content" data-md-component="content">
+        <article class="md-content__inner md-typeset">
+          
+        </article>
+      </div>
+
+    </div>
+  </main>
+</div>
+
+
+
+<script src="../assets/kd-theme.js?v=20260726-r2"></script>
+<script src="../assets/custom.js?v=20260726-r2"></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11.4.1/dist/mermaid.min.js"></script>
+<script src="../assets/mermaid-init.js?v=20260930-system-fonts-r1"></script>
+<script src="../search/main.js"></script>
+</body>
+</html>
